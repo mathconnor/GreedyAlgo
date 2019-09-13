@@ -57,7 +57,7 @@ def testGreedys(foods, maxUnits):
     testGreedy(foods, maxUnits, Food.getValue)
     print('Use greedy by cost to allocate', maxUnits, 'calories')
     testGreedy(foods, maxUnits, lambda x: 1/Food.getCost(x))
-    print('Use greedy by cost to allocate', maxUnits, 'calories')
+    print('Use greedy by density to allocate', maxUnits, 'calories')
     testGreedy(foods, maxUnits, Food.density)
 
 names = ['wine', 'beer', 'pizza', 'burger', 'fries', 'cola', 'appple', 'donut', 'cake']
